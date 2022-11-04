@@ -4,4 +4,4 @@
 
 sudo microk8s config >/tmp/kubeconfig
 export KUBECONFIG=/tmp/kubeconfig
-sudo chmod go-r /tmp/ kubeconfig 
+sudo chmod go-r /tmp/kubeconfig 

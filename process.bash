@@ -3,6 +3,10 @@
 # This part is for Helm configuration 
 sudo microk8s config >/tmp/kubeconfig
 export KUBECONFIG=/tmp/kubeconfig
+
+kubectl config view --raw > ~/.kube/config # This line you need to insert
+before you run helm 
+
 sudo chmod go-r /tmp/kubeconfig
 # This part is for color of Vim depends of the time of the day
 # 
